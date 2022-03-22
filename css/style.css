@@ -1,0 +1,673 @@
+*{
+    box-sizing: border-box;
+}
+*::selection{
+    background: #7D07F2;
+    color: #fff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    transition: all .4s linear;
+}
+/* .continer{
+    width: 1230px;
+    margin: auto;
+} */
+/* .progras{
+    width: 320px;
+    height: 12px;
+    border: 1px solid #444;
+    margin: 50px auto;
+    border-radius: 3px;
+    position: relative;
+}
+.progras::after{
+    content: "";
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0, 255, 64);
+}
+.progras::before{
+    content: "html,css,js";
+    position: absolute;
+    left: 0;
+    top: -25px;
+    font-size: 21px;
+} */
+header{
+    width: 100%;
+    min-height: 810px;
+    background: url("../img/camera.jpg")  center center fixed;
+    background-size: cover;
+}
+header .back{
+    width: 100%;
+    min-height: 810px;
+    background: linear-gradient(-180deg,#ab05f27a,#7d07f29a,#5207F2);
+}
+header nav #drop{
+    position: absolute;
+    z-index: 55;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    top: 8px;
+    right:  5px;
+    display: none;
+}
+header nav {
+    width: 100%;
+    min-height: 60px;
+    transition: all .4s linear;
+    background: #5207F2;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    transition: all .4s linear;
+}
+
+header nav ul li{
+    list-style: none;
+    background: #5207F2;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all .4s linear;
+}
+header nav ul li .fas{
+    font-size: 30px;
+    margin-right: 5px;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+    padding: 15px 20px;
+    color: #fff;
+    transition: all .4s linear;
+}
+header nav ul li a:hover{
+    color: #23D9B7;
+}
+header .back .text{
+    width: 70%;
+    /* position: relative;
+    /* top: 30%;
+    left: 15%; */ 
+    text-align: center;
+    margin: 150px auto;
+}
+header .back .text h2{
+    margin: 0;
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+header .back .text h2 span{
+    color:#23D9B7;
+}
+header .back .text p{
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #fff;
+}
+header .back .text button{
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #5207F2;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Sora', sans-serif;
+    transition: all .4s linear;
+}
+header .back .text button:hover{
+    color: #23D9B7;
+}
+.about{
+    padding: 25px;
+    width: 100%;
+    min-height: 500px;
+    background: #F2F2F2;
+}
+.about .title{
+    text-align: center;
+}
+.about .title h1{
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #5207F2;
+}
+.about .title p{
+    font-size: 23px;
+    padding: 0 70px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #1b4b42;
+    margin-bottom: 50px;
+}
+.about .fotuer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .fotuer .anmiation{
+    width: 570px;
+    height: 400px;
+    /* background: #5207F2; */
+    display: flex;
+    align-items: center;
+}
+.about .fotuer .info{
+    width: 570px;
+    height: 400px;
+    /* background: #5207F2; */
+    text-align: center;
+}
+.about .fotuer .info i{
+    font-size: 70px;
+    color: #5207F2;
+    margin-top: 70px;
+}
+.about .fotuer .info h3{
+    font-size: 35px;
+    margin: 7px;
+    font-family: sans-serif;
+    color: #444;
+}
+.about .fotuer .info p{
+    font-size: 21px;
+    line-height: 1.5;
+    padding: 0 20px;
+    color: #555;
+}
+.career{
+    width: 100%;
+    min-height: 600px;
+    background: url("../img/team.jpg")  center center fixed;
+    background-size: cover;
+}
+.career .back{
+    width: 100%;
+    min-height: 600px;
+    padding: 30px;
+    background: linear-gradient(-180deg,#ab05f27a,#7d07f29a,#5207F2);
+
+}
+.career .back .h3{
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+.career .back .h3 h4{
+    margin: 0 0 7px 0;
+}
+.career .back .all-team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.career .back .team{
+    width: 250px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    transition: all 1s linear;
+    margin: auto;
+    margin-top: 50px;
+
+}
+.career .back .team img{
+    width: 100%;
+    height: 67%;
+    border-radius: 50%;
+}
+
+.career .back .team ul{
+    position: absolute;
+    bottom: 185px;
+    left: 37px;
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: all .4s linear;
+    opacity: 0;
+}
+.career .back .team:hover ul{
+    opacity: 1;
+}
+.career .back .team ul li{
+    list-style: none;
+}
+.career .back .team ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all .4s linear;
+}
+.career .back .team ul li a:hover{
+    color: #5207F2;
+}
+.career .back .team p{
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    margin: 3px;
+}
+.career .back .team h3{
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.servers{
+    width: 100%;
+    min-height: 460px;
+    padding: 40px 30px;
+    background: #F2F2F2;
+}
+.servers .fas{
+    font-size: 35px;
+    color: #5207F2;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.servers .fas i{
+    font-size: 55px;
+}
+.servers h3{
+    text-align: center;
+    font-size: 35px;
+    color: #5207F2;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.servers .scetion-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.servers .scetion-card .card{
+    width: 270px;
+    min-height: 520px;
+    background: linear-gradient(-180deg,#9609d3,#6f07d6fd,#5207F2);
+    box-shadow: 0 0 10px 4px #999;
+    border: 1px solid #5207F2;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    transition: all .4s linear;
+}
+.servers .scetion-card .card:hover{
+    transform: scale(1.1);
+}
+.servers .scetion-card .card .price{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #23D9B7;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 25px;
+    color: #fff;
+    line-height: 120px;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    border: 1px solid #7D07F2;
+}
+.servers .scetion-card .card h3{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+    margin-top: 80px;
+}
+.servers .scetion-card .card ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 35px;
+}
+.servers .scetion-card .card ul li{
+    list-style: none;
+    display: block;
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Catamaran', sans-serif;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.servers .scetion-card .card ul li i{
+    font-size: 22px;
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+.servers .scetion-card .card button{
+    margin-top: 20px;
+    font-size: 21px;
+    color: #fff;
+    padding: 10px;
+    background: #23D9B7;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.our-clint{
+    width: 100%;
+    min-height: 200px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+} 
+.our-clint .clint{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+.our-clint .clint >i{
+    font-size: 70px;
+   display: block;
+   margin-top: 20px;
+   margin-bottom: 8px;
+}
+.our-clint .clint span{
+    font-size: 35px;
+}
+.our-clint .clint span  .plus{
+    font-size: 32px;  
+    margin-left: 5px;
+}
+
+.our-clint .clint p{
+    font-size: 20px;
+    margin: 3px;
+}
+.reviwe{
+    width: 100%;
+    min-height: 300px;
+    padding: 30px;
+    text-align: center;
+    background: #F2F2F2;
+    position: relative;
+    transition: all .4s linear;
+}
+.reviwe h3{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #5207F2;
+}
+.reviwe .conter p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 150px;
+    line-height: 1.6;
+    margin: 8px;
+    color: #444;
+    transition: all .4s linear;
+}
+.reviwe .conter span{
+    font-size: 30px;
+    color: #23D9B7;
+    transition: all .4s linear;
+}
+.reviwe button{
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #9609d3;
+    font-size: 35px;
+    position: absolute;
+    transition: all .4s linear;
+}
+.reviwe button:hover{
+    color: #23D9B7;
+}
+.reviwe #prev{
+    top: 35%;
+    left: 50px;
+}
+.reviwe #next{
+    top: 35%;
+    right: 50px;
+}
+.conact-us{
+    width: 100%;
+    min-height: 300px;
+    background: url("../img/team.jpg") no-repeat fixed center center;
+    background-size: cover;
+  }
+  .conact-us .back{
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(-180deg,#ab05f27a,#7d07f29a,#5207F2);
+    padding: 30px 0;
+  }
+  .conact-us .back .heder{
+      margin: auto;
+      display: block;
+      text-align:center ;
+      color: #fff;
+
+  }
+  .conact-us .back .heder h3{
+      font-size: 35px;
+      margin: 8px;
+  }
+  .conact-us .back .heder i{
+      font-size: 55px;
+      text-align: center;
+  }
+  .conact-us .back .all{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .conact-us .back .conatct{
+    color: #fff;
+    width: 550px;
+    height: 350px;
+  }
+  .conact-us .back .locaction{
+    margin-top: 15px;
+    width: 550px;
+    height: 350px;
+  }
+  
+  .conact-us .back .conatct > div{
+    margin-top: 15px;
+  }
+  .conact-us .back .conatct span{
+    margin-left: 15px;
+    font-size: 22px;
+  }
+  .conact-us .back .conatct input{
+    width: 95%;
+    height: 60px;
+    display: block;
+    font-size:25px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding-left: 10px;
+    transition: all .3s linear;
+  
+  }
+  .conact-us .back .conatct input:focus{
+    padding-left: 18px;
+  }
+  .conact-us .back .locaction textarea{
+    width: 95%;
+    height: 200px;
+    display: block;
+    font-size:25px;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding-left: 10px;
+    transition: all .3s linear;
+  
+  }
+  .conact-us .back .locaction span{
+    margin-left: 15px;
+    font-size: 22px;
+    color: #fff;
+  }
+  .conact-us .back .locaction textarea:focus{
+    padding-left: 18px;
+  
+  }
+  .conact-us .back .locaction button{
+    width: 95%;
+    height: 65px;
+    font-size: 22px;
+    color: #fff;
+    background: #23D9B7;
+    border: 1px solid #3282b8;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+footer {
+    width: 100%;
+    min-height: 300px;
+    background: #111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .list{
+    width: 255px;
+    text-transform: capitalize;
+}
+footer .list h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    color: aliceblue;
+    border-bottom: 1px solid #777;
+}
+footer .list ul{
+    margin: 0;
+    padding: 0;
+}
+footer .list ul li{
+    list-style: none;
+    line-height: 1.6;
+}
+footer .list ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 19px;
+    transition: all .4s linear;
+}
+footer .list ul li a:hover{
+    padding-left: 4px;
+}
+.copyRight{
+    width: 100%;
+    height: 60px;
+    background: #444;
+    text-align: center;
+
+}
+.copyRight span{
+    line-height: 60px;
+    color: #fff;
+    font-size: 21px;
+    text-transform: capitalize;
+}
+#up{
+    font-size: 66px;
+    position: fixed;
+    z-index: 666;
+    bottom: 50px;
+    right: 10px;
+    transition: all .4s linear;
+    cursor: pointer;
+    display: none;
+}
+#up a{
+    color: #fff;
+    transition: all .4s linear;
+}
+#up a:hover{
+    color: #7D07F2;
+
+}
+#up:hover{
+    transform: rotate(-45deg);
+
+}
+@media (min-width:500px) and (max-width: 600px){
+    header nav{
+        background: #5207F2;
+    }
+    header .back .text{
+        margin-top: 80px;
+    }
+    header nav ul{
+        display: none;
+        transition: all .4s linear;
+    }
+    header nav ul.drop{
+        display: block;
+        transition: all .4s linear;
+    }
+    header nav #drop{
+        display: block;
+        transition: all .4s linear;
+    }
+  }
+
+  /* @media (min-width:501px) , (max-width:750px){
+    header nav{
+        background: #5207F2;
+    }
+    header .back .text{
+        margin-top: 80px;
+    }
+    header nav ul{
+        display: none;
+        transition: all .4s linear;
+    }
+    header nav ul.drop{
+        display: block;
+        transition: all .4s linear;
+    }
+    header nav #drop{
+        display: block;
+        transition: all .4s linear;
+    }
+  } */
